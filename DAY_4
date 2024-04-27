@@ -1,0 +1,62 @@
+```
+print(3+2)
+print(3-1)
+print(3*2)
+print(3/2)
+print(3//2)
+print(3%2)
+print(3**2)
+```
+```
+quotient, remainder = divmod(5,2)
+print(quotient, remainder)
+```
+```
+a = 5 + 2
+b =  5 - 1
+c = 5 * 2
+d = 5 / 2
+e = 5 // 2
+f = 5 % 2
+g = 5 ** 2
+print(a, b, c, d, e, f, g)
+```
+```
+a = 5 
+b = 2
+print(a == b)
+print(a != b)
+print(a > b)
+print(a < b)
+print(a >= b)
+print(a <= b)
+```
+```
+>>> 0b1101
+>>> bin (13)
+```
+```
+a = 13
+b = 7
+
+print(bin(a))
+print(bin(b))
+print(bin(a&b))
+print(a&b)
+print(' ')
+
+print(bin(a))
+print(bin(b))
+print(bin(a|b))
+print(a|b)
+print(' ')
+
+print(bin(a))
+print(bin(b))
+print(bin(a^b))
+print(a^b)
+print(' ')
+
+print(bin(a))
+print(bin(~a))
+```
