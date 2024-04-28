@@ -1,0 +1,215 @@
+```
+#len() : Returns the length of the string
+a = 'I Love Python'
+print( len(a) ) 
+```
+```
+name = 'BlockDMask'
+phone = '010 xxxx xxxx'
+address = 'korea'
+print(len(name)) #10
+print(len(phone)) #13
+print(len(address)) #5
+```
+```
+a = [1, 2, 3] 
+print(min(a)) 
+```
+```
+b = 'cBlockDMask'
+print(min(b))
+```
+```
+c = 1 
+print(min(c))
+```
+```
+d = (6, 5, 4, 2) 
+print(min(d))
+```
+```
+e = [3,4,5, 'a','b','c']
+print(min(e))
+```
+```
+a = [1,2,3]
+b = [1,2,4]
+print(min(a,b))
+```
+```
+c = 'CC'
+d = 'BA'
+print(min(c,d))
+```
+```
+g = [2, 3, 4]
+h = [2, 2, 2, 2, 2]
+i = [9, 8, 7, 6, 5]
+j = [1]
+k = ['a']
+print(min(g, h, i, j, k))
+```
+```
+g = [2, 3, 4]
+h = [2, 2, 2, 2, 2]
+i = [9, 8, 7, 6, 5]
+j = [1]
+k = [0]
+print(min(g, h, i, j, k))
+```
+```
+myString = "everdevel"
+print(myString.count('e'))
+
+a = 'BlockDMask'
+
+print('#1 a.count("k")')
+print(a.count('k'))
+print('#2 a.count("DM")')
+print(a.count('DM'))
+print("#3 a[2] l '~' l a[4]")
+print(a[2] + ' ~ ' + a[4])
+print("#4 a.count('k', 2, 3)")
+print(a.count('k', 2, 3))
+print("#5 a.count('k', 2, 4)")
+print(a.count('k', 2, 4))
+print("#6 a.count('k', 2, 5)")
+print(a.count('k', 2, 5))
+```
+```
+str= "BlockDMask Blog."; 
+print(f"str : {str}\n") 
+
+# find 예제1 
+print("1. str.find('찾을문자')") 
+result1 = str.find('B')
+print(result1) 
+
+# 문자가 있는 경우 
+result2 = str.find('Z') 
+
+# 문자가 없는 경우 
+print(f"str.find('B') : {result1}") 
+print(f"str.find('Z') : {result2}")
+
+result3 = str.find('ask')
+print(f"str.find('ask') : {result3}") 
+```
+```
+str= "BlockDMask Blog."; 
+print(f"str : {str}\n") 
+
+# 문자열이 있는 경우 
+result4 = str.find('kkk') 
+# 문자열이 없는 경우 
+print(f"str.find('ask') : {result3}") 
+print(f"str.find('kkk') : {result4}") 
+print() 
+
+# find 예제2 
+print("2. str.find('찾을 문자', 시작index)") 
+result5 = str.find('o') 
+result6 = str.find('o', 5) 
+print(f"str.find('o') : {result5}") 
+print(f"str[5] : {str[5]}") 
+print(f"str.find('o', 5) : {result6}") 
+print() 
+
+# find 예제3 
+print("3. str.find('찾을 문자', 시작 index, 끝 index)") 
+result7 = str.find('o') 
+result8 = str.find('o', 5, 11) 
+
+
+# "DMask B" 
+print(f"str.find('o') : {result7}") 
+print(f"str[5]~str[11] : {str[5]} ~ {str[11]}") 
+print(f"str.find('o', 5, 11) : {result8}")
+```
+```
+text = 'Welcome to Codetorial'
+
+pos_e_last = text.rfind('e')
+print(pos_e_last)
+
+pos_e_first = text.find('e')
+print(pos_e_first)
+
+pos_to_last = text.rfind('to')
+print(pos_to_last)
+
+pos_to_first = text.find('to')
+print(pos_to_first)
+```
+```
+str = "BlockDMascleark Blog.";
+print(f"str : {str}\n")
+
+print("1. str.find('찾을문자')")
+result1 = str.rfind('B')
+print(f"str.rfind('B') : {result1}")
+```
+```
+str = 'Hello world, Python!'
+
+if str.startswith('Hello'):
+    print('It starts with Hello')
+
+if not str.startswith('Python'):
+    print('It does not start with Python')
+
+print(str.startswith('Hello'))
+print(str.startswith('Python'))
+```
+```
+str = "this is string example....wow!!!"
+
+print(len(str))
+suffix = "wow!!!"
+print(str.endswith(suffix))
+print(str.endswith(suffix,20))
+
+suffix = "is"
+print(str.endswith(suffix, 2, 4))
+print(str.endswith(suffix, 2, 6))
+```
+```
+str = 'Hello world, Python!'
+
+print(len(str))
+
+if str.startswith('Hello'):
+    print('It starts with Hello')
+
+if not str.endswith('Python'):
+    print('It does not start with Python')
+
+print(str.startswith('Hello'))
+print(str.endswith('Python!',1,20))
+```
+```
+nums_list = [1,2,3,3,3,4,5,6,7]
+nums_tuple = (1,2,3,4,4,5,5,6)
+nums_set = {1,2,3,5,6,7,8}
+
+print(nums_list.index(6))
+print(nums_list.index(3))
+
+print(nums_tuple.index(2))
+print(nums_tuple.index(5))
+
+print(nums_set.index(2))
+print(nums_set.index(5))
+```
+```
+text = 'Welcome to Codetorial'
+
+pos_Code_last = text.rindex('Code')
+print(pos_Code_last)
+
+pos_code_last = text.rfind('code')
+print(pos_code_last)
+
+pos_code_last = text.rindex('code')
+print(pos_code_last)
+```
