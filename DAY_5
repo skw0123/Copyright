@@ -1,0 +1,84 @@
+```
+if 조건문
+	수행할 문장1
+	수행할 문장2
+else
+	수행할 문장A
+	수행할 문장B
+```
+```
+if a > b: # 만약 a가 b보다 크면
+	print('a') # a 출력
+else: # 그렇지 않으면
+	print('b') # b 출력
+```
+```
+p_class = 'A'
+sel_amount = 7900
+
+if p_class == 'A':
+  sel_amount *= 0.7
+  print(f'판매가는 {sel_amount}원입니다')
+elif p_class == '8':
+  sel_amount *= 0.85
+  print(f'판매가는 {sel_amount}원입니다')
+```
+```
+x = 2
+
+if x%2 == 0:
+  print('Ever number')
+
+else:
+  print('Odd number')
+```
+```
+x = 13
+
+if x < 10:
+  print('x는 10보다 작다')
+  if x%2 == 0:
+    print('x는 짝수')
+  else:
+    print('x는 홀수')
+else:
+  print('x는 10보다 크다')
+  if x%2 == 0:
+    print('x는 짝수')
+  else:
+    print('x는 홀수')
+```
+```
+x = 13
+
+if x<10 and x%2==0:
+  print('x는 10보다 작으면서 짝수')
+if x<10 and not x%2==0:
+  print('x는 10보다 작으면서 홀수')
+if x>10 and x%2==0:
+  print('x는 10보다 크면서 짝수')
+if x>10 and not x%2==0:
+  print('x는 10보다 크면서 홀수')
+```
+```
+coffee = 10
+money = 3700
+while money:
+  print("돈 확인, 커피 제공")
+  coffee = coffee -1
+  print("남은 커피와 양은 %d개"% coffee)
+  if coffee == 0:
+    print("커피 소진, 판매 중지")
+    break
+```
+```
+from re import I
+i = 0
+result1 = 0
+while i < 100:
+  i = i + 1
+  if i % 2 == 0:
+    print('1번 방법 : {0} {1}'.format(i,result1))
+    result1 = result1 + i
+print('1번 방법 : {0}'.format(result1))
+```
