@@ -1,0 +1,141 @@
+```
+a = '    test !    '
+b = '~~.test.~~'
+c = '~test!'
+
+#print( b.rstrip(), end='.' )
+print(a.lstrip('~'))
+print(b.lstrip('~'))
+print(c.lstrip('~'))
+
+print(a.rstrip('~'))
+print(b.rstrip('~'))
+print(c.rstrip('~'))
+```
+```
+text = '0000000water boils at 100 degrees 000'
+print(text.lstrip('0'))
+print(text.rstrip('0'))
+print(text.strip('0'))
+```
+```
+a="abcd"
+
+print(a.rjust(10))
+print(a.rjust(10,'#'))
+
+print(a.ljust(10))
+print(a.ljust(10,'*'))
+
+print(a.ljust(10))
+print(a.ljust(10,'k'))
+```
+```
+text = ' Water boils at 100 degrees '
+print('[' + text.rstrip() + ']')
+print('[' + text.lstrip() + ']')
+print('[' + text.strip() + ']')
+```
+```
+txt = "  Hz  "
+x = txt.isspace()
+print(x)
+```
+```sentence = input("문자열을 입력하시오: ")
+table = { "알파벳" : 0, "숫자" : 0, "빈칸" : 0 }
+
+for i in sentence :
+    if (i.isalpha()):
+        table["알파벳"] += 1        
+    elif (i.isdigit()):
+        table["숫자"] += 1        
+    elif (i.isspace()):
+        table["빈칸"] += 1        
+print(table)
+```
+```
+s = 'abcd'
+n = 7
+
+answer = ''
+for i in range(n-len(s)):      # 문자열의 앞을 빈 문자열로 채우는 for 문
+    answer += ' '
+answer += s
+
+print(answer)
+
+print(s.ljust(n))              #좌측 정렬
+print(s.center(n))             #가운데 정렬
+print(s.rjust(n))              #우측 정렬
+```
+```
+s = "a b c d e f g"
+print(f's         : {s}')
+ 
+r = s.split()
+print(f's.split() : {r}')
+```
+```
+s = "aa.bb.cc.dd.ee.ff.gg"
+print(f's                : {s}')
+ 
+r0 = s.split()
+r1 = s.split('.')
+r2 = s.split(sep='.')
+print(f"s.split()        : {r0}")
+print(f"s.split('.')     : {r1}")
+print(f"s.split(sep='.') : {r2}")
+```
+```
+txt = "노션\nnotion.so"
+
+x = txt.splitlines()
+
+print(x)
+```
+```
+text = '111,222,333,444'
+
+replaceAll= text.replace(",","!")
+replace_t1 = text.replace(",", "!",1)
+replace_t2 = text.replace(",", "!",2)
+replace_t3 = text.replace(",", "!",3)
+print("결과 :")
+print(replaceAll)
+print(replace_t1)
+print(replace_t2)
+print(replace_t3)
+```
+```
+g = 'Milk\nChicken\r\nBread\rButter'
+
+print(g.splitlines())
+print(g.splitlines(True))
+
+g = 'Milk Chicken Bread Butter'
+print(g.splitlines())
+```
+```
+a = ['a', 'b', 'c', 'd', '1', '2', '3']
+print(a)
+print()
+
+result1 = "".join(a)           # 리스트를 문자열로 : join 이용
+print(result1)
+
+result2 = ''                   # 리스트를 문자열로 : 하나하나 문자열을 더해서.
+for v in a:
+    result2 += v
+ 
+print(result2)
+```
+```
+print("3".zfill(3))
+print("a1".zfill(7))
+```
+```
+for x in range(3):
+    print(x)
+    print( str(x).zfill(4) )
+```
+```
